@@ -1,0 +1,113 @@
+main .container .right{
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom:0;
+    height: max-content;
+}
+
+.right .messages{
+    background: var(--white-color);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+}
+
+.right .messages .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .messages i{
+    font-size: 1.4rem;
+}
+
+.right .messages .search-box{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.right .messages .message-category{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.right .messages .message-category h6{
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid var(--light-color);
+    padding-bottom: 0.4rem;
+}
+
+.right .messages .message-category .active{
+    border-color: var(--dark-color);
+}
+
+.right .messages .message{
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    align-items: start;
+}
+.right .messages .message:last-child{
+    margin: 0px;
+}
+.right .messages .message p{
+    font-size: 0.8rem;
+}
+
+.right .messages .message .profile-photo{
+    position: relative;
+    overflow: visible;
+
+}
+
+.right .messages .message .profile-photo img{
+    border-radius: 50%;
+
+}
+
+.right .messages .message .profile-photo .active{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+    background-color: var(--success-color);
+    right: 0px;
+    bottom: 0px;
+
+}
+
+.right .messages .message-category .message-requests{
+    color: var(--primary-color);
+}
+
+.right .friend-requests{
+    margin-top: 1rem;
+
+}
+
+.right .friend-requests h4{
+    color: var(--grey-color);
+    margin-bottom: 1rem;
+}
+
+.right .friend-requests .request{
+    background-color: var(--white-color);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin:1rem 0px ;
+}
+
+.right .friend-requests .request .info{
+    display: flex;
+    gap: 1rem;
+    margin-bottom:0.8rem ;
+}
+
+.right .friend-requests .request .actions{
+    text-align: center;
+}

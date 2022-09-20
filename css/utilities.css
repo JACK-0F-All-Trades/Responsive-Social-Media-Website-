@@ -1,0 +1,74 @@
+
+
+:root{
+    --primary-hue:252;
+    --light-color-lightness: 95%;
+    --dark-color-lightness: 17%;
+    --white-color-lightness: 100%;
+
+    --white-color: hsl(252,30%,var(--white-color-lightness));
+    --light-color: hsl(252,30%,var(--light-color-lightness));
+    --grey-color: hsl(252,15%,65%);
+    --primary-color: hsl(var(--primary-hue),75%,60%);
+    --secondary-color: hsl(252,100%,90%);
+    --success-color: hsl(120,95%,65%);
+    --danger-color: hsl(0, 95%, 65%);
+    --dark-color: hsl(252, 30%, var(--dark-color-lightness));
+    --black-color: hsl(252, 30%, 10%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+
+}
+
+
+
+
+/* reset the initial settings of the page */
+
+*, *::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+/* button stylings */
+.btn{
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+/* text stylings */
+.bold-text{
+    font-weight: 500;
+
+}
+
+.muted-text{
+    color: var(--gray-color);
+}

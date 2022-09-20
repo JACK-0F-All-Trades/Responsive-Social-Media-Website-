@@ -1,0 +1,28 @@
+/* Main Section */
+main{
+    position: relative;
+    top: 5.4rem;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    column-gap: 2rem;
+    position: relative;
+}
+
+main .container .left{
+    position: sticky;
+    height: max-content;
+    top: var(--sticky-top-left);
+}
+
+main .container .left .profile{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    column-gap: 1rem;
+    background: var(--white-color);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+}

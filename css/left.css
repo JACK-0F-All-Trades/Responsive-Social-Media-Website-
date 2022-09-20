@@ -1,0 +1,107 @@
+
+.left .side-bar{
+    background: var(--white-color);
+    margin: 1rem 0px;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.left .side-bar .menu-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.left .side-bar .menu-item:hover{
+    background: var(--light-color);
+}
+
+.left .side-bar .menu-item i{
+    color: var(--grey-color);
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    position: relative;
+}
+
+.left .side-bar .menu-item i .notification-count{
+    background: var(--danger-color);
+    width: fit-content;
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 0.8rem;
+    padding: 0.1rem 0.4rem;
+    position: absolute;
+    top: -0.2rem;
+    right: -0.3rem;
+}
+
+.left .side-bar .menu-item h3{
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+.left .side-bar .active{
+    background-color: var(--light-color);
+}
+.left .side-bar .active i, .left .side-bar .active h3{
+    color: var(--primary-color);
+}
+
+.left .side-bar .active::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.5rem;
+    background: var(--primary-color);
+    height: 100%;
+}
+
+.left .side-bar .menu-item:first-child.active{
+    border-top-left-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+
+.left .side-bar .menu-item:last-child.active{
+    border-bottom-left-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+
+.left .side-bar .menu-item .notifications-popup{
+    position: absolute;
+    top: 0;
+    left: 110%;
+    background: var(--white-color);
+    width: 30rem;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60% 25%);
+    display: none;
+}
+
+.left .side-bar .menu-item .notifications-popup::before{
+    content: "";
+    width: 1.2rem;
+    display: block;
+    height: 1.2rem;
+    background: var(--white-color);
+    position: absolute;
+    left: -0.6rem;
+    transform: rotate(45deg);
+}
+
+.left .notifications-popup >div{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left .notifications-popup small{
+    display: block;
+}
+
+.left .left-side-btn{
+    text-align: center;
+}
