@@ -11,11 +11,7 @@ main .container{
     position: relative;
 }
 
-main .container .left{
-    position: sticky;
-    height: max-content;
-    top: var(--sticky-top-left);
-}
+
 
 main .container .left .profile{
     display: flex;

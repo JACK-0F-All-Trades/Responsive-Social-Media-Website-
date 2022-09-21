@@ -1,4 +1,8 @@
-
+main .container .left{
+    position: sticky;
+    height: max-content;
+    top: var(--sticky-top-left);
+}
 .left .side-bar{
     background: var(--white-color);
     margin: 1rem 0px;
